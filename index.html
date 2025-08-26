@@ -42,7 +42,33 @@
       justify-content: center;
       align-items: center;
       padding: 25px;
-      margin-right: 10px;
+      margin-right: 6px;
+    }
+
+    .js-result {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 30px;
+      padding: 10px;
+      font-weight: bolder;
+    }
+    .js-moves {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      padding: 10px;
+      font-weight: bolder;
+    }
+    .js-score {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      padding: 10px;
+      font-weight: bolder;
+    }
+
+    .move-icon {
+      padding: 5px;
+      height: 80px;
+      width: auto;
+      border: none;
     }
 
     @media (max-width: 600px) {
@@ -170,7 +196,8 @@
         updateScoreDisplay();
 
         document.querySelector('.js-result').innerHTML = result;
-        document.querySelector('.js-moves').innerHTML = `You: ${playerMove}, Computer: ${computerMove}`;
+        document.querySelector('.js-moves').innerHTML = `You<img src="${playerMove}-emoji.png" class = "move-icon">,
+        Computer: <img src="${computerMove}-emoji.png" class ="move-icon">`;
         document.querySelector('.js-score').innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`;
       }
       function updateScoreDisplay() {
@@ -197,4 +224,3 @@
     </script>
   </body>
 </html>
-
