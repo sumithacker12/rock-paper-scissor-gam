@@ -1,0 +1,112 @@
+body {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 50px;
+    padding: 10px 10px;
+    font-weight: bolder;
+    font-family: Arial, sans-serif;
+}
+
+button {
+    border: 2px solid black;
+    background-color: lightgray;
+    color: black;
+    padding: 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 110px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: darkgray;
+}
+
+img {
+    height: 80px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    margin-right: 6px;
+}
+
+.js-result {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    padding: 10px;
+    font-weight: bolder;
+}
+.js-moves {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+}
+.js-score {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    font-weight: bolder;
+}
+
+.move-icon {
+    padding: 5px;
+    height: 80px;
+    width: auto;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    body {
+    padding: 2px;
+    }
+    img {
+    max-width: 100%;
+    width: auto;
+    padding: 6px;
+    }
+    h1 {
+    font-size: 30px;    
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    }
+    button {
+    display: flex;
+    border: 2px solid black;
+    background-color: red;
+    color: white;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: auto;
+    height: 32px;
+    }
+    button:hover {
+    width: auto;
+    height: 35px;
+    }
+}
+
+@media (max-height: 400px) {
+    img {
+    height: 70px;
+    padding: 10px;
+    }
+    h1 {
+    font-size: 25px;
+    padding: 5px;
+    }
+    button {
+    width: auto;
+    height: 30px;
+    }
+}
